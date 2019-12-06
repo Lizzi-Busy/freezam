@@ -1,0 +1,7 @@
+ffmpeg
+pydub
+eyed3 
+numpy
+scipy
+matplotlib
+psycopg2
