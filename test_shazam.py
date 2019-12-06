@@ -6,11 +6,18 @@ import analyze as a
 import convert as c
 import fun as f
 
+no_db = False
+
 try:
     import psycopg2
+except ModuleNotFoundError:
+    no_db = True
+try:
     import database as d
+except ModuleNotFoundError:
+    no_db = True
+try:
     from database import conn
-    no_db = False
 except ModuleNotFoundError:
     no_db = True
 
