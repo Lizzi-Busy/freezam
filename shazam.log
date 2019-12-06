@@ -1,0 +1,16 @@
+12-05 19:13 analyze      INFO     wav file processed
+12-05 19:13 analyze      INFO     series converted to one-channel
+12-05 19:13 analyze      INFO     spectrogram computed
+12-05 19:13 analyze      INFO     start to iterate through the spectrogram
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.1) computed
+12-05 19:13 analyze      INFO     fingerprint (ver.2) computed
+12-05 19:13 fun          INFO     iterating through all songs in database
+12-05 19:13 fun          INFO     best match found
+12-05 19:13 fun          INFO     song title found for best match with song_id=52
