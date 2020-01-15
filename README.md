@@ -12,7 +12,7 @@ This program has the following functionalities:
 
 This program allows you to build your own music database at 1-click! 
  
-To get started, please copy your music files (preferably in mp3 format) into the shazam/music/mp3 folder. You'll notice that the folder already contains some pre-downloaded music files for testing purposes. Feel free to add or remove files in the folder. 
+To get started, please copy your music files (preferably in mp3 format) into the freezam/music/mp3 folder. You'll notice that the folder already contains some pre-downloaded music files for testing purposes. Feel free to add or remove files in the folder. 
 
 Then run the following command in the terminal:
 
