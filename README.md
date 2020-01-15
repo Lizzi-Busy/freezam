@@ -17,7 +17,7 @@ To get started, please copy your music files (preferably in mp3 format) into the
 Then run the following command in the terminal:
 
 ```bash
-cd shazam
+cd freezam
 $python interface.py construct
 ```
 
@@ -121,7 +121,7 @@ Now you're ready to start fingerprinting your audio collection!
 ## Example
 
 ```
-cd shazam
+cd freezam
 # create music database
 python interface.py -vb construct
 # identify a snippet (pre-downloaded)
