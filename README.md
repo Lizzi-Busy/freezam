@@ -1,4 +1,4 @@
-# Shazam-like Audio Recognition Algorithm
+# Freezam: A Shazam-like Audio Recognition Algorithm
 
 Audio fingerprinting and recognition algorithm implemented in Python. 
 
