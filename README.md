@@ -2,7 +2,7 @@
 
 Audio fingerprinting and recognition algorithm implemented in Python. 
 
-This program will match the recorded snippet against the fingerprints held in the database, returning the title of the song being played. Main functionality of this program has been tested on Windows 10.
+Users may create a customized music database, view spectral analyses of a song, and identify a song from noisy snippets. Main functionality of this program has been tested on Windows 10.
 
 ## Description
 
