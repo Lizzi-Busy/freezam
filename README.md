@@ -4,6 +4,40 @@ Audio fingerprinting and recognition algorithm implemented in Python.
 
 Users may create a customized music database, view spectral analyses of a song, and identify a song from noisy snippets. Main functionality of this program has been tested on Windows 10.
 
+
+## Dependencies
+
+**Software**
+- `ffmpeg` for converting audio files to .wav format
+- `PostgreSQL` for database construction
+
+**Python packages**
+- `pydub` a Python ffmpeg wrapper
+- `eyed3` for reading mp3 metadata
+- `numpy` for audio signals transformations
+- `scipy` used in spectrogram and peak finding algorithms
+- `matplotlib` used for spectrogram plots
+- `psycopg2` a Python-PostgreSQL database adapter
+
+
+## Installation
+
+First, install the above dependencies.
+
+Second, git clone the project into a local git directory.
+
+Third, you'll allow the program to access your PostgreSQL database where fingerprints can be stored. In the shazam folder, create a python file named `credentials.py`:
+
+```
+#credentials.py
+
+DB_USER = 'your-db-username'
+DB_PASSWORD = your-db-password
+```
+
+Now you're ready to start fingerprinting your audio collection!
+
+
 ## Description
 
 This program has the following functionalities:
@@ -78,44 +112,11 @@ For faster identification, choose `type=1`; for better precision, choose `type=2
 
 **Logging**
 
-The application writes a message for each action taken to a designated log file shazam.log. Warnings and error messages go to the log file but also to standard error. You can customize the log level by turning on the `-vb` (verbose) option, so that all log entries will be output to standard error as well as the log file. For example:
+This application writes a message for each action taken to a designated log file shazam.log. Warnings and error messages go to the log file but also to standard error. You can customize the log level by turning on the `-vb` (verbose) option, so that all log entries will be output to standard error as well as the log file. For example:
 
 ```
 python interface.py -vb identify --pathfile="./music/snippet/Track54.wav" --type=2
 ```
-
-
-## Dependencies
-
-**Software**
-- `ffmpeg` for converting audio files to .wav format
-- `PostgreSQL` for database construction
-
-**Python packages**
-- `pydub` a Python ffmpeg wrapper
-- `eyed3` for reading mp3 metadata
-- `numpy` for audio signals transformations
-- `scipy` used in spectrogram and peak finding algorithms
-- `matplotlib` used for spectrogram plots
-- `psycopg2` a Python-PostgreSQL database adapter
-
-
-## Installation
-
-First, install the above dependencies.
-
-Second, git clone the project into a local git directory.
-
-Third, you'll allow the program to access your PostgreSQL database where fingerprints can be stored. In the shazam folder, create a python file named `credentials.py`:
-
-```
-#credentials.py
-
-DB_USER = 'your-db-username'
-DB_PASSWORD = your-db-password
-```
-
-Now you're ready to start fingerprinting your audio collection!
 
 
 ## Example
@@ -137,12 +138,4 @@ To run the automated tests for this application:
 cd shazam
 pytest -v test_shazam.py
 ```
-
-## Author
-
-* Chu Pan [chup@andrew.cmu.edu], Carnegie Mellon University
-
-
-
-
 
